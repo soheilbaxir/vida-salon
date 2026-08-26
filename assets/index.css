@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-vazir: 'Vazirmatn', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, serif;
+  }
+  
+  html {
+    font-family: var(--font-vazir);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-vazir);
+    background-color: #F9F6F0;
+    color: #1A1A1A;
+  }
+}
+
+.font-vazir {
+  font-family: var(--font-vazir);
+}
+
+.font-serif-luxury {
+  font-family: var(--font-serif);
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #E3D2B4 50%, #C5A059 100%);
+}
+
+.luxury-gradient-dark {
+  background: linear-gradient(135deg, #775A19 0%, #C5A059 100%);
+}
+
+.gold-border {
+  border-color: rgba(197, 160, 89, 0.25);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(227, 210, 180, 0.4);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(209, 197, 180, 0.3);
+}
+
+/* Custom scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F3F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #775A19;
+}
+
